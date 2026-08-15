@@ -22,8 +22,13 @@ class SnapchatDownloader:
 
     def banner(self):
         os.system('cls' if os.name == 'nt' else 'clear')
-        print(Fore.CYAN + Style.BRIGHT + """
-  ██╗   ██╗     ██████╗     ███████╗
+  
+     print(Fore.CYAN + Style.BRIGHT + """
+
+
+
+     
+  ██╗   ██╗     ██████╗     ███████
   ╚██╗ ██╔╝    ██╔════╝     ██╔════╝
    ╚████╔╝     ██║          █████╗  
     ╚██╔╝      ██║          ██╔══╝  
@@ -36,6 +41,11 @@ class SnapchatDownloader:
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 """)
 
+   
+    
+    
+    
+    
     def fetch_profile_data(self, username):
         url = f"{self.base_url}{username}"
         try:
