@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Arachne Clock</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body class="ambient">
+
+  <svg viewBox="0 0 400 400" width="300" height="300">
+    <circle cx="200" cy="200" r="153.2"
+      stroke="#b8873f" fill="none"
+      stroke-width="4.3"
+      stroke-dasharray="0.65 14.222"
+    />
+
+    <g id="sec" transform="translate(200, 200)">
+      <circle r="56.37" fill="none"/>
+      <path id="hand-sec" d="M 0 0 L 0 -130" stroke="#f6e6c1" stroke-width="2" />
+    </g>
+  </svg>
+
+  <div class="vline"></div>
+  <time id="readout">00:00:00</time>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
